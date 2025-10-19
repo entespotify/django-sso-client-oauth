@@ -1,6 +1,6 @@
-# django-sso-client
+# django-sso-client-oauth
 
-**django-sso-client** is a reusable Django app that simplifies the integration of Single Sign-On (SSO) functionality into your Django projects. It is designed to work seamlessly with Django-based applications and supports flexible configurations for connecting to an SSO provider.
+**django-sso-client-oauth** is a reusable Django app that simplifies the integration of Single Sign-On (SSO) functionality into your Django projects. It is designed to work seamlessly with Django-based applications and supports flexible configurations for connecting to an SSO provider.
 
 > **Note**: This package is currently in **beta**. Features and APIs may change in future releases.
 
@@ -16,7 +16,7 @@
 Install the package using pip:
 
 ```bash
-pip install django-sso-client
+pip install django-sso-client-oauth
 ```
 
 Alternatively, for development purposes, you can install it in editable mode:
@@ -28,17 +28,17 @@ pip install -e .
 To uninstall the package:
 
 ```bash
-pip uninstall django-sso-client
+pip uninstall django-sso-client-oauth
 ```
 
 ## Quickstart
 
-1. Add `django_sso_client` to your `INSTALLED_APPS` in `settings.py`:
+1. Add `django_sso_client_oauth` to your `INSTALLED_APPS` in `settings.py`:
 
    ```python
    INSTALLED_APPS = [
        ...,
-       "django_sso_client",
+       "django_sso_client_oauth",
    ]
    ```
 
@@ -66,7 +66,7 @@ pip uninstall django-sso-client
 
    urlpatterns = [
        ...,
-       path("sso/", include("django_sso_client.urls")),
+       path("sso/", include("django_sso_client_oauth.urls")),
    ]
    ```
 
@@ -80,7 +80,7 @@ pip uninstall django-sso-client
 
 ### Redirecting Users to the SSO Provider
 
-To initiate the SSO flow, redirect users to the SSO provider's login page. This can be done using the utility functions provided in the `django_sso_client.utils` module.
+To initiate the SSO flow, redirect users to the SSO provider's login page. This can be done using the utility functions provided in the `django_sso_client_oauth.utils` module.
 
 ### Handling SSO Callbacks
 
